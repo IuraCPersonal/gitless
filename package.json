@@ -1,0 +1,37 @@
+{
+  "name": "gitless",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "A gitless workflow",
+  "author": "IuraCPersonal",
+  "license": "ISC",
+  "exports": "./dist/index.js",
+  "main": "index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "gitless": "./bin/run.js"
+  },
+  "scripts": {
+    "build": "shx rm -rf dist && tsc -b",
+    "lint": "eslint",
+    "lint:fix": "eslint --fix"
+  },
+  "dependencies": {
+    "@oclif/core": "^4.2.10",
+    "remeda": "^2.21.2",
+    "typescript": "^5.8.2"
+  },
+  "oclif": {
+    "bin": "gitless",
+    "commands": "./dist/commands",
+    "dirname": "gitless",
+    "topicSeparator": " "
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.11.0",
+    "@types/node": "^18.19.85",
+    "eslint": "^9.23.0",
+    "shx": "^0.4.0",
+    "ts-node": "^10.9.2"
+  }
+}
