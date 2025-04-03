@@ -2,14 +2,14 @@
 
 A simple implementation of Git in TypeScript.
 
-## Learning resources:
+## Learning resources
 
 - [What's inside .git directory](https://gitready.com/advanced/2009/03/23/whats-inside-your-git-directory.html)
 - [oclif](https://www.joshcanhelp.com/oclif/)
 
 ## Features to implement
 
-- [ ] init
+- [x] init
 - [ ] add
 - [ ] rm
 - [ ] commit
@@ -26,4 +26,15 @@ A simple implementation of Git in TypeScript.
 
 ## What I learned during this project?
 
-Stay tunned...
+### The `.git` directory
+
+At a bare minimum, a `.git` repository should contain the following files and dirs:
+
+```md
+- .git
+    - objects/
+    - refs/
+    - HEAD
+    - config
+```
+
