@@ -1,3 +1,5 @@
-import { files } from './modules/files.js'
+import Init from './commands/init.js'
 
-files.assertInRepo()
+export const commands = {
+	init: Init
+}
